@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  --brand:#183d6b;
+  --brand-strong:#142f53;
+  --accent:#2b6cb0;
+  --gold:#f4c542;
+}
+*{box-sizing:border-box}
+.hero-header{background-image:url('/images/pattern-header.jpg');background-size:cover;background-position:center;position:relative;padding-top:36px;padding-bottom:36px;padding-left: 5%;padding-right: 5%}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,48,0.55),rgba(8,20,48,0.55));z-index:0}
+.nav-content{position:relative;z-index:10}
+.header-logo{width:68px;height:68px;object-fit:contain}
+.hero-info{background:#fff;border-radius:22px;padding:34px;box-shadow:0 22px 50px rgba(8,20,48,0.18);max-width:620px}
+.hero-title{font-weight:800;color:var(--brand-strong);font-size:34px;line-height:1.05}
+@media(min-width:1024px){.hero-title{font-size:56px}}
+.hero-sub{color:#334155;margin-top:10px;font-size:15px;line-height:1.6}
+.hero-figure{border-radius:22px;overflow:hidden;box-shadow:0 26px 60px rgba(8,20,48,0.18)}
+.map-card{border-radius:24px;box-shadow:0 28px 80px rgba(8,20,48,0.12);overflow:hidden;padding:18px;background:#fff}
+.map-card img{width:100%;height:420px;object-fit:cover;border-radius:14px}
+.culture-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 22px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10px;
+}
+@media(min-width:640px){.culture-row{grid-template-columns:repeat(3,1fr)}}
+.culture-card{border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 18px 48px rgba(8,20,48,0.12);display:flex;flex-direction:column}
+.culture-card .card-image{height:180px;object-fit:cover;width:100%;display:block}
+.culture-card .card-bottom{background:var(--brand);color:#fff;padding:16px;display:flex;flex-direction:column;gap:4px}
+.culture-card .card-title{font-weight:700;font-size:1rem;letter-spacing:0.4px}
+.culture-card .card-meta{font-size:11px;opacity:0.9}
+.site-footer{background-image:url('/images/pattern-footer.jpg');background-size:cover;background-position:center;color:#fff;padding-top:28px;padding-bottom:28px}
+
+
+#header {
+  position: relative;
+  background-image: url('/images/batik.png');
+  background-size: cover;
+  background-position: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+#header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(8,20,40,0.35); /* overlay gelap */
+  z-index: 0;
+}
+
+#header .nav-content {
+  position: relative;
+  z-index: 10; /* logo & text di atas layer batik */
+}
+
+.header-logo {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  padding-left: 5%;
+}
+
+.nav-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding-left: 10px;
+}
+
+.nav-sub {
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95rem;
+  padding-left: 10px;
+}
+
+@media (min-width:1024px) {
+  .nav-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* FOOTER BACKGROUND EXACT LIKE IMAGE */
+#footer {
+  position: relative;
+  background-image: url('/images/batik.png');
+  background-size: cover;
+  background-position: center;
+  padding-top: 18px;    /* thin like screenshot */
+  padding-bottom: 18px;
+  overflow: hidden;
+}
+
+/* TOP → BOTTOM GRADIENT EXACT LIKE YOUR IMAGE */
+#footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(8,20,40,0.05) 0%,      /* very light top */
+    rgba(8,20,40,0.15) 25%,     /* mid */
+    rgba(8,20,40,0.45) 60%,     /* darker */
+    rgba(8,20,40,0.60) 100%     /* darkest bottom */
+  );
+  z-index: 0;
+}
+
+#footer .footer-inner {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-left,
+#footer-right {
+  color: #ffffff;
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  #footer .footer-inner {
+    flex-direction: column;
+    gap: 8px;
+  }
+  #footer-left, #footer-right {
+    font-size: 16px;
+  }
+}
