@@ -2,10 +2,26 @@ import './bootstrap';
 import '../css/app.css';
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (document.getElementById('three-right')) {
-    import('./monas-three').then(mod => mod.default('three-right', '/mnt/data/monumen_nasional_indonesia.glb')).catch(e => console.error(e));
-  }
+
+  const models = [
+    { id: '3d-monas',       js: './monas-three',      glb: '/models/monas.glb' },
+    { id: '3d-surabaya',    js: './surabaya-three',   glb: '/models/patung_sura_dan_buaya.glb' },
+    { id: '3d-ampera',      js: './ampera-three',     glb: '/models/ampera.glb' },
+    { id: '3d-suramadu',    js: './suramadu-three',   glb: '/models/jembatan_suramadu.glb' },
+    { id: '3d-lawangsewu',  js: './lawangsewu-three', glb: '/models/lawang_sewu_3d.glb' },
+  ];
+
+  models.forEach(model => {
+    const container = document.getElementById(model.id);
+    if (!container) return;
+
+    import(model.js)
+      .then(mod => mod.default(model.id, model.glb))
+      .catch(err => console.error(`Error load model ${model.id}`, err));
+  });
+
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const row = document.getElementById('photo-row');

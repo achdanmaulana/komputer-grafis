@@ -19,7 +19,7 @@ function fitCamera(camera, object, offset = 0.82, dir = new THREE.Vector3(0,0.33
   return center;
 }
 
-export default async function mountRight3D(containerId='three-right', modelUrl='/mnt/data/monumen_nasional_indonesia.glb') {
+export default async function mountRight3D(containerId='3d-monas', modelUrl='/mnt/data/monumen_nasional_indonesia.glb') {
   const container = document.getElementById(containerId);
   if (!container) return;
   if (container.__threeApp) return;
