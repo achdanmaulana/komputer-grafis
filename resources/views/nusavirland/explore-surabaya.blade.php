@@ -7,7 +7,7 @@
   <section class="card card-grid">
       <div class="col col-right">
       <div class="three-frame">
-        <div id="three-right" class="three-canvas"></div>
+        <div id="three-monas" class="three-canvas"></div>
       </div>
     </div>
     <div class="col col-left">
