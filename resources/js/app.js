@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: '3d-monas',       js: './monas-three',      glb: '/models/monas.glb' },
     { id: '3d-surabaya',    js: './surabaya-three',   glb: '/models/patung_sura_dan_buaya.glb' },
     { id: '3d-ampera',      js: './ampera-three',     glb: '/models/ampera.glb' },
-    { id: '3d-suramadu',    js: './suramadu-three',   glb: '/models/jembatan_suramadu.glb' },
+    { id: '3d-borobudur',    js: './borobudur-three', glb: '/models/borobudur.glb' },
     { id: '3d-lawangsewu',  js: './lawangsewu-three', glb: '/models/lawang_sewu_3d.glb' },
     { id: '3d-sate',        js: './sate-three',       glb: '/models/sate.glb' },
   ];
