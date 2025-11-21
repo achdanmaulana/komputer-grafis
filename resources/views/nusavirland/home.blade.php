@@ -28,33 +28,66 @@
 
 <section class="max-w-7xl mx-auto px-6 py-12">
   <h2 class="text-3xl font-bold text-center mb-8">Explore the Landmark</h2>
-    
-        
             <img src="/images/map.png" class="map-image">
-        
-   
   <div id="culture" class="culture-row">
-    <a href="/explore" id="card-monas" class="culture-card">
+    <a href="/explore-monas" id="card-monas" class="culture-card">
       <img src="/images/monas.jpg" class="card-image" alt="Monumen Nasional">
       <div class="card-bottom">
         <div class="card-title">MONUMEN NASIONAL</div>
         <div class="card-meta">JAKARTA</div>
       </div>
     </a>
+
     <div class="culture-card">
-      <img src="/images/gedungsate.jpeg" class="card-image" alt="Gedung Sate">
-      <div class="card-bottom">
-        <div class="card-title">GEDUNG SATE</div>
-        <div class="card-meta">BANDUNG</div>
-      </div>
+      <a href="/explore-gedungsate" id="card-monas" class="culture-card">
+        <img src="/images/gedungsate.jpeg" class="card-image" alt="Gedung Sate">
+        <div class="card-bottom">
+          <div class="card-title">GEDUNG SATE</div>
+          <div class="card-meta">BANDUNG</div>
+        </div>
+      </a>
     </div>
+
     <div class="culture-card">
-      <img src="/images/borobudur.jpg" class="card-image" alt="Borobudur">
-      <div class="card-bottom">
-        <div class="card-title">BOROBUDUR TEMPLE</div>
-        <div class="card-meta">YOGYAKARTA</div>
-      </div>
+      <a href="/explore-borobudur" id="card-monas" class="culture-card">
+        <img src="/images/borobudur.jpg" class="card-image" alt="Borobudur">
+        <div class="card-bottom">
+          <div class="card-title">BOROBUDUR TEMPLE</div>
+          <div class="card-meta">YOGYAKARTA</div>
+        </div>
+      </a>
+    </div>
+        <div class="culture-card">
+      <a href="/explore-ampera" id="card-monas" class="culture-card">
+        <img src="/images/ampera.jpg" class="card-image" alt="Gedung Sate">
+        <div class="card-bottom">
+          <div class="card-title">JEMBATAN AMPERA</div>
+          <div class="card-meta">PALEMBANG</div>
+        </div>
+      </a>
+    </div>
+
+        <div class="culture-card">
+      <a href="/explore-lawangsewu" id="card-monas" class="culture-card">
+        <img src="/images/lawangsewu.jpg" class="card-image" alt="Gedung Sate">
+        <div class="card-bottom">
+          <div class="card-title">LAWANG SEWU</div>
+          <div class="card-meta">SEMARANG</div>
+        </div>
+      </a>
+    </div>
+
+        <div class="culture-card">
+      <a href="/explore-surabaya" id="card-monas" class="culture-card">
+        <img src="/images/patungsurabaya.jpg" class="card-image" alt="Gedung Sate">
+        <div class="card-bottom">
+          <div class="card-title">PATUNG SURABAYA</div>
+          <div class="card-meta">SURABAYA</div>
+        </div>
+      </a>
     </div>
   </div>
+
+  
 </section>
 @endsection

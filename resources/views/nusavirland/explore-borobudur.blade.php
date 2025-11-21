@@ -26,11 +26,13 @@
   <!-- CARD 2: left = horizontal photos, right = info details -->
   <section class="card card-grid reverse-on-large">
     <div class="col col-left">
-      <div class="photo-strip">
-        <div class="photo-row peek-scroll" id="photo-row">
-          <div class="photo-wrap"><img src="/images/monas.jpg" class="photo-item" alt="thumb1"></div>
-          <div class="photo-wrap"><img src="/images/monas.jpg" class="photo-item" alt="thumb2"></div>
-          <div class="photo-wrap"><img src="/images/monas.jpg" class="photo-item" alt="thumb3"></div>
+      <div class="photo-strip-outer">
+        <div class="photo-scroll" id="photo-row">
+          <img src="/images/borobudur.jpg" class="photo-item" alt="">
+          <img src="/images/borobudur.jpg" class="photo-item" alt="">
+          <img src="/images/borobudur.jpg" class="photo-item" alt="">
+          <img src="/images/borobudur.jpg" class="photo-item" alt="">
+          <img src="/images/borobudur.jpg" class="photo-item" alt="">
         </div>
       </div>
     </div>
@@ -38,18 +40,14 @@
     <aside class="col col-right">
       <div class="info-card">
         <h3 class="info-subtitle">Information</h3>
-        <div class="info-grid">
-          <div class="info-labels">
+          <div class="info-grid">
             <div>Location</div>
-            <div>Opening Hours</div>
-            <div>Ticket Price</div>
-          </div>
-          <div class="info-values">
             <div>: Merdeka Square, Jakarta, Jalan Lapangan Monas, Gambir, Central Jakarta City, Jakarta 10110</div>
+            <div>Opening Hours</div>
             <div>: 08.00-16.00 WIB (sesi 1) / 19.00-22.00 WIB (sesi 2)</div>
+            <div>Ticket Price</div>
             <div>: -</div>
           </div>
-        </div>
       </div>
     </aside>
   </section>
