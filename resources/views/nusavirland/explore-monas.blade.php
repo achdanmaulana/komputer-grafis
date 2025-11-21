@@ -11,7 +11,7 @@
           - data-model-url: path ke file GLB (saat ini memakai path lokal /mnt/data/... sesuai request)
           - data-info-map: JSON mapping meshName -> teks tooltip
         -->
-        <div id="3dmonas"
+        <div id="3d-monas"
             class="three-canvas"
             data-model-url="{{ asset('models/monas.glb') }}"
             data-info-map='@json([

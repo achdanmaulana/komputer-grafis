@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: '3d-ampera',      js: './ampera-three',     glb: '/models/ampera.glb' },
     { id: '3d-suramadu',    js: './suramadu-three',   glb: '/models/jembatan_suramadu.glb' },
     { id: '3d-lawangsewu',  js: './lawangsewu-three', glb: '/models/lawang_sewu_3d.glb' },
+    { id: '3d-sate',        js: './sate-three',       glb: '/models/sate.glb' },
   ];
 
   models.forEach(model => {

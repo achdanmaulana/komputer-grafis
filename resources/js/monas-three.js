@@ -19,12 +19,13 @@ function fitCamera(camera, object, offset = 1.6, dir = new THREE.Vector3(0,0.33,
   return { box, center };
 }
 
-export default async function mountRight3D(containerId='3d-monas', modelUrl='/mnt/data/monumen_nasional_indonesia.glb') {
+export default async function mountRight3D(containerId='3d-monas', modelUrl='/mnt/data/monas.glb') {
   const container = document.getElementById(containerId);
   if (!container) return;
   if (container.__threeApp) return container.__threeApp;
 
-  const modelUrl = container.dataset.modelUrl || "/mnt/data/monumen_nasional_indonesia.glb";
+  modelUrl = container.dataset.modelUrl ?? modelUrl;
+
 
   // read infoMap from blade if provided
   let infoMap = {};
