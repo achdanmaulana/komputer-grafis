@@ -2,8 +2,8 @@
 
 @section('content')
 <section class="hero-header relative overflow-hidden">
-    <div class="hero-overlay absolute inset-0"></div>
 
+    <div class="hero-overlay absolute inset-0"></div>
     <div class="relative max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <!-- LEFT TEXT -->
         <div class="flex ">
@@ -18,21 +18,21 @@
         </div>
 
         <!-- RIGHT IMAGE -->
-        <div class="flex col-6">
-            <div class="hero-info">
-            <img src="/images/monas.jpg" 
-                 class="w-full max-w-md rounded-2xl shadow-xl object-cover" 
-                 alt="Monas">
-            </div>
+        <div class="col-12">
+          <div class="card-photo-container">
+            <img src="/images/monas.jpg" alt="Monas" class="card-photo-image">
+          </div>
         </div>
     </div>
 </section>
 
 <section class="max-w-7xl mx-auto px-6 py-12">
   <h2 class="text-3xl font-bold text-center mb-8">Explore the Landmark</h2>
-  <div class="map-card mb-8">
-    <img src="/images/map.png" alt="Map">
-  </div>
+    
+        
+            <img src="/images/map.png" class="map-image">
+        
+   
   <div id="culture" class="culture-row">
     <a href="/explore" id="card-monas" class="culture-card">
       <img src="/images/monas.jpg" class="card-image" alt="Monumen Nasional">

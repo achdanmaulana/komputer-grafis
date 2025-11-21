@@ -1,26 +1,58 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="max-w-7xl mx-auto px-6 py-16">
-  <h1 class="text-3xl font-bold mb-6">Explore 3D</h1>
-  <p class="text-slate-600 mb-6">This is a placeholder for the 3D explorer. You can integrate <code>three.js</code> or <code>&lt;model-viewer&gt;</code> here.</p>
+<div class="page-container">
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div class="bg-white rounded-xl p-6 shadow-sm">
-      <div class="h-40 bg-slate-100 rounded-md mb-4 flex items-center justify-center">3D preview</div>
-      <h3 class="font-semibold">Monument A</h3>
-      <p class="text-sm text-slate-500">Short description</p>
+  <!-- CARD 1: left = explanation (kiri), right = 3D (kanan) -->
+  <section class="card card-grid">
+      <div class="col col-right">
+      <div class="three-frame">
+        <div id="three-right" class="three-canvas"></div>
+      </div>
     </div>
-    <div class="bg-white rounded-xl p-6 shadow-sm">
-      <div class="h-40 bg-slate-100 rounded-md mb-4 flex items-center justify-center">3D preview</div>
-      <h3 class="font-semibold">Monument B</h3>
-      <p class="text-sm text-slate-500">Short description</p>
+    <div class="col col-left">
+      <div class="info-card">
+        <h1 class="info-title">MONUMEN NASIONAL</h1>
+        <p class="info-text">
+          Monumen Nasional yang disingkat Monas adalah monumen peringatan setinggi 132 meter (433 kaki) yang terletak di Lapangan Medan Merdeka, Jakarta Pusat. Monas didirikan untuk mengenang perjuangan rakyat Indonesia merebut kemerdekaan.
+        </p>
+        <p class="info-text">
+          Pembangunan dimulai pada 17 Agustus 1961 di bawah perintah Presiden Soekarno dan diresmikan pada 12 Juli 1975.
+        </p>
+      </div>
     </div>
-    <div class="bg-white rounded-xl p-6 shadow-sm">
-      <div class="h-40 bg-slate-100 rounded-md mb-4 flex items-center justify-center">3D preview</div>
-      <h3 class="font-semibold">Monument C</h3>
-      <p class="text-sm text-slate-500">Short description</p>
+  </section>
+
+  <!-- CARD 2: left = horizontal photos, right = info details -->
+  <section class="card card-grid reverse-on-large">
+    <div class="col col-left">
+      <div class="photo-strip">
+        <div class="photo-row peek-scroll" id="photo-row">
+          <div class="photo-wrap"><img src="/images/monas.jpg" class="photo-item" alt="thumb1"></div>
+          <div class="photo-wrap"><img src="/images/monas.jpg" class="photo-item" alt="thumb2"></div>
+          <div class="photo-wrap"><img src="/images/monas.jpg" class="photo-item" alt="thumb3"></div>
+        </div>
+      </div>
     </div>
-  </div>
+
+    <aside class="col col-right">
+      <div class="info-card">
+        <h3 class="info-subtitle">Information</h3>
+        <div class="info-grid">
+          <div class="info-labels">
+            <div>Location</div>
+            <div>Opening Hours</div>
+            <div>Ticket Price</div>
+          </div>
+          <div class="info-values">
+            <div>: Merdeka Square, Jakarta, Jalan Lapangan Monas, Gambir, Central Jakarta City, Jakarta 10110</div>
+            <div>: 08.00-16.00 WIB (sesi 1) / 19.00-22.00 WIB (sesi 2)</div>
+            <div>: -</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
 </div>
 @endsection

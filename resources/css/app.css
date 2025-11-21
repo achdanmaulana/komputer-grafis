@@ -9,7 +9,7 @@
 }
 *{box-sizing:border-box}
 .hero-header{background-image:url('/images/pattern-header.jpg');background-size:cover;background-position:center;position:relative;padding-top:36px;padding-bottom:36px;padding-left: 5%;padding-right: 5%}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,48,0.55),rgba(8,20,48,0.55));z-index:0}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8, 81, 252, 0.55),rgba(164, 172, 5, 0.55));z-index:0}
 .nav-content{position:relative;z-index:10}
 .header-logo{width:68px;height:68px;object-fit:contain}
 .hero-info{background:#fff;border-radius:22px;padding:34px;box-shadow:0 22px 50px rgba(8,20,48,0.18);max-width:620px}
@@ -17,15 +17,39 @@
 @media(min-width:1024px){.hero-title{font-size:56px}}
 .hero-sub{color:#334155;margin-top:10px;font-size:15px;line-height:1.6}
 .hero-figure{border-radius:22px;overflow:hidden;box-shadow:0 26px 60px rgba(8,20,48,0.18)}
-.map-card{border-radius:24px;box-shadow:0 28px 80px rgba(8,20,48,0.12);overflow:hidden;padding:18px;background:#fff}
-.map-card img{width:100%;height:420px;object-fit:cover;border-radius:14px}
+.map-card {
+  border-radius: 24px;
+  box-shadow: 0 28px 80px rgba(8,20,48,0.12);
+  padding: 5%;
+  background: #fff;
+}
+
+/* wrapper untuk gambar */
+.map-inner {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+}
+
+/* gambar tetap cover tapi tidak mepet ke sudut putih */
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .culture-row {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 22px;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 10px;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 @media(min-width:640px){.culture-row{grid-template-columns:repeat(3,1fr)}}
 .culture-card{border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 18px 48px rgba(8,20,48,0.12);display:flex;flex-direction:column}
@@ -36,6 +60,7 @@
 .site-footer{background-image:url('/images/pattern-footer.jpg');background-size:cover;background-position:center;color:#fff;padding-top:28px;padding-bottom:28px}
 
 
+/* header */
 #header {
   position: relative;
   background-image: url('/images/batik.png');
@@ -84,6 +109,29 @@
     font-size: 1.75rem;
   }
 }
+
+
+.card-photo-container {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(8, 20, 48, 0.16);
+  width: 100%;
+  max-width: 480px;  /* lebar card */
+  height: 360px;     /* tinggi card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-photo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
 
 /* FOOTER BACKGROUND EXACT LIKE IMAGE */
 #footer {
@@ -139,4 +187,75 @@
   #footer-left, #footer-right {
     font-size: 16px;
   }
+}
+
+/* page layout */
+.page-container { max-width:1200px; margin:0 auto; padding:24px; }
+
+/* card shared */
+.card { margin-bottom:28px; }
+.card-grid {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:20px;
+  align-items:start;
+}
+
+/* columns */
+.col { box-sizing:border-box; }
+
+/* left/info card style */
+.info-card {
+  background:#fff;
+  padding:26px;
+  border-radius:14px;
+  box-shadow:0 12px 30px rgba(8,20,48,0.08);
+}
+.info-title { font-size:34px; margin:0 0 12px 0; font-weight:800; }
+.info-text { margin:0 0 10px 0; color:#222; line-height:1.6; }
+
+/* right 3D frame + canvas */
+.three-frame {
+  background:#fff;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 12px 30px rgba(8,20,48,0.08);
+}
+.three-canvas {
+  width:100%;
+  height:520px;
+  border-radius:10px;
+  overflow:hidden;
+  background:linear-gradient(180deg,#161616 0%, #111 100%);
+  box-shadow: inset 0 -24px 48px rgba(0,0,0,0.5);
+  display:block;
+}
+
+/* photo strip */
+.photo-strip { padding:6px 4px; border-radius:10px; }
+.photo-row { display:flex; gap:18px; overflow-x:auto; padding:8px; }
+.photo-item { flex:0 0 320px; height:120px; object-fit:cover; border-radius:12px; box-shadow:0 10px 26px rgba(8,20,48,0.08); }
+
+/* second card info */
+.info-subtitle { font-size:18px; font-weight:700; margin-bottom:12px; }
+.info-grid { display:grid; grid-template-columns:140px 1fr; gap:8px 12px; align-items:start; }
+.info-labels { font-weight:700; }
+.info-values { color:#111; }
+
+/* Responsive behavior */
+/* Large screens: make a 7 / 5 split (left col = 7fr, right col = 5fr) */
+@media (min-width: 1024px) {
+  .card-grid { grid-template-columns: 7fr 5fr; }
+  /* if you want card2 reversed (photos left, info right) keep default; .reverse-on-large can flip */
+  .reverse-on-large { grid-template-columns: 7fr 5fr; }
+}
+
+/* If you want to swap column order on large screens, add this rule:
+   .reverse-on-large { grid-template-columns: 5fr 7fr; }
+   and move the HTML accordingly. For now we keep photos left (7 cols) and info right (5 cols). */
+
+@media (max-width: 1023px) {
+  .three-canvas { height:360px; }
+  .photo-item { flex:0 0 220px; height:100px; }
+  .info-title { font-size:26px; }
 }
