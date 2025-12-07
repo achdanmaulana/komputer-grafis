@@ -7,17 +7,23 @@
   <section class="card card-grid">
       <div class="col col-right">
       <div class="three-frame">
-        <div id="3d-borobudur" class="three-canvas"></div>
+        <div id="3d-monas"
+            class="three-canvas"
+            data-model-url="{{ asset('models/borobudur.glb') }}"
+            data-info-map='@json([
+                "Object_4" => "Bagian dasar Monas — pondasi utama bangunan.",
+                "Object_6" => "Bagian menara Monas — struktur vertikal utama.",
+                "Object_8" => "Lidah api Monas — simbol semangat perjuangan."
+            ])'
+            style="width:100%; height:420px;">
+        </div>
       </div>
     </div>
     <div class="col col-left">
       <div class="info-card">
-        <h1 class="info-title">MONUMEN NASIONAL</h1>
-        <p class="info-text">
-          Monumen Nasional yang disingkat Monas adalah monumen peringatan setinggi 132 meter (433 kaki) yang terletak di Lapangan Medan Merdeka, Jakarta Pusat. Monas didirikan untuk mengenang perjuangan rakyat Indonesia merebut kemerdekaan.
-        </p>
-        <p class="info-text">
-          Pembangunan dimulai pada 17 Agustus 1961 di bawah perintah Presiden Soekarno dan diresmikan pada 12 Juli 1975.
+        <h1 class="info-title">CANDI BOROBUDUR</h1>
+        <p class="info-text text-justify">
+        Candi Borobudur adalah monumen Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah, dan telah diakui secara global sebagai Situs Warisan Dunia UNESCO. Dibangun pada abad ke-9 masa pemerintahan Wangsa Syailendra, candi ini dirancang dengan arsitektur punden berundak megah yang terdiri dari enam teras bujur sangkar dan tiga pelataran melingkar. Bangunan ini dihiasi dengan 2.672 panel relief batu dan 504 arca Buddha, serta dimahkotai stupa induk besar. Sempat terkubur abu vulkanik selama berabad-abad, Borobudur kini berdiri sebagai simbol kejayaan arsitektur nusantara dan tempat ziarah keagamaan yang suci bagi umat Buddha.
         </p>
       </div>
     </div>
@@ -29,10 +35,10 @@
       <div class="photo-strip-outer">
         <div class="photo-scroll" id="photo-row">
           <img src="/images/borobudur.jpg" class="photo-item" alt="">
-          <img src="/images/borobudur.jpg" class="photo-item" alt="">
-          <img src="/images/borobudur.jpg" class="photo-item" alt="">
-          <img src="/images/borobudur.jpg" class="photo-item" alt="">
-          <img src="/images/borobudur.jpg" class="photo-item" alt="">
+          <img src="/images/borobudur2.jpg" class="photo-item" alt="">
+          <img src="/images/borobudur3.jpg" class="photo-item" alt="">
+          <img src="/images/borobudur4.jpg" class="photo-item" alt="">
+          <img src="/images/borobudur5.jpg" class="photo-item" alt="">
         </div>
       </div>
     </div>
@@ -42,11 +48,11 @@
         <h3 class="info-subtitle">Information</h3>
           <div class="info-grid">
             <div>Location</div>
-            <div>: Merdeka Square, Jakarta, Jalan Lapangan Monas, Gambir, Central Jakarta City, Jakarta 10110</div>
+            <div>: Jl. Badrawati, Kec. Borobudur, Kabupaten Magelang, Jawa Tengah</div>
             <div>Opening Hours</div>
-            <div>: 08.00-16.00 WIB (sesi 1) / 19.00-22.00 WIB (sesi 2)</div>
+            <div>: 06.30 - 16.30 WIB</div>
             <div>Ticket Price</div>
-            <div>: -</div>
+            <div>: Rp50.000 (Domestik) / Rp375.000 (Mancanegara)</div>
           </div>
       </div>
     </aside>

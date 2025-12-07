@@ -7,17 +7,23 @@
   <section class="card card-grid">
       <div class="col col-right">
       <div class="three-frame">
-        <div id="3d-ampera" class="three-canvas"></div>
+        <div id="3d-ampera"
+            class="three-canvas"
+            data-model-url="{{ asset('models/ampera.glb') }}"
+            data-info-map='@json([
+                "Cube_MERAH_0" => "Kerangka Jembatan.",
+                "Cube_HITAM_0" => "Kerangka Jembatan.",
+                "Cube_HIJAU2_0" => "Kerangka Jembatan."
+            ])'
+            style="width:100%; height:420px;">
+        </div>
       </div>
     </div>
     <div class="col col-left">
       <div class="info-card">
-        <h1 class="info-title">MONUMEN NASIONAL</h1>
-        <p class="info-text">
-          Monumen Nasional yang disingkat Monas adalah monumen peringatan setinggi 132 meter (433 kaki) yang terletak di Lapangan Medan Merdeka, Jakarta Pusat. Monas didirikan untuk mengenang perjuangan rakyat Indonesia merebut kemerdekaan.
-        </p>
-        <p class="info-text">
-          Pembangunan dimulai pada 17 Agustus 1961 di bawah perintah Presiden Soekarno dan diresmikan pada 12 Juli 1975.
+        <h1 class="info-title">JEMBATAN AMPERA</h1>
+        <p class="info-text text-justify">
+        Jembatan Ampera adalah sebuah mahakarya infrastruktur yang membentang gagah di atas Sungai Musi, menghubungkan daerah Seberang Ulu dan Seberang Ilir di Kota Palembang. Pembangunan jembatan ini dimulai pada April 1962 dengan dana pampasan perang Jepang dan awalnya diberi nama Jembatan Bung Karno sebagai bentuk penghormatan. Namun, seiring pergolakan politik tahun 1966, namanya diubah menjadi Ampera yang merupakan akronim dari Amanat Penderitaan Rakyat. Keunikan utamanya terletak pada dua menara setinggi 63 meter dan bagian tengah jembatan yang dulunya dapat diangkat secara mekanis agar kapal-kapal besar bisa melintas di bawahnya.
         </p>
       </div>
     </div>
@@ -29,10 +35,10 @@
       <div class="photo-strip-outer">
         <div class="photo-scroll" id="photo-row">
           <img src="/images/ampera.jpg" class="photo-item" alt="">
-          <img src="/images/ampera.jpg" class="photo-item" alt="">
-          <img src="/images/ampera.jpg" class="photo-item" alt="">
-          <img src="/images/ampera.jpg" class="photo-item" alt="">
-          <img src="/images/ampera.jpg" class="photo-item" alt="">
+          <img src="/images/ampera1.jpg" class="photo-item" alt="">
+          <img src="/images/ampera2.jpg" class="photo-item" alt="">
+          <img src="/images/ampera3.jpg" class="photo-item" alt="">
+          <img src="/images/ampera4.jpg" class="photo-item" alt="">
         </div>
       </div>
     </div>
@@ -42,9 +48,9 @@
         <h3 class="info-subtitle">Information</h3>
           <div class="info-grid">
             <div>Location</div>
-            <div>: Merdeka Square, Jakarta, Jalan Lapangan Monas, Gambir, Central Jakarta City, Jakarta 10110</div>
+            <div>: Jl. Sultan Mahmud Badaruddin II, 9 Ilir, Bukit Kecil, Kota Palembang, Sumatera Selatan</div>
             <div>Opening Hours</div>
-            <div>: 08.00-16.00 WIB (sesi 1) / 19.00-22.00 WIB (sesi 2)</div>
+            <div>: 24 Jam (Area Publik)</div>
             <div>Ticket Price</div>
             <div>: -</div>
           </div>

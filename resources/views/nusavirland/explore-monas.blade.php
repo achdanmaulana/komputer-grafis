@@ -44,10 +44,10 @@
       <div class="photo-strip-outer">
         <div class="photo-scroll" id="photo-row">
           <img src="/images/monas.jpg" class="photo-item" alt="">
-          <img src="/images/monas.jpg" class="photo-item" alt="">
-          <img src="/images/monas.jpg" class="photo-item" alt="">
-          <img src="/images/monas.jpg" class="photo-item" alt="">
-          <img src="/images/monas.jpg" class="photo-item" alt="">
+          <img src="/images/monas2.jpg" class="photo-item" alt="">
+          <img src="/images/monas3.jpg" class="photo-item" alt="">
+          <img src="/images/monas4.jpg" class="photo-item" alt="">
+          <img src="/images/monas5.jpg" class="photo-item" alt="">
         </div>
       </div>
     </div>

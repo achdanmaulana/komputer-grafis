@@ -7,17 +7,26 @@
   <section class="card card-grid">
       <div class="col col-right">
       <div class="three-frame">
-        <div id="3d-surabaya" class="three-canvas"></div>
+        <div id="3d-surabaya"
+            class="three-canvas"
+            data-model-url="{{ asset('models/surabaya.glb') }}"
+            data-info-map='@json([
+                "Cube_Material007_0_1" => "Baya: Sang Buaya",
+                "Cube_Material007_0" => "Sura: Sang Ikan Hiu",
+                
+            ])'
+            style="width:100%; height:420px;">
+        </div>
       </div>
     </div>
     <div class="col col-left">
       <div class="info-card">
-        <h1 class="info-title">MONUMEN NASIONAL</h1>
-        <p class="info-text">
-          Monumen Nasional yang disingkat Monas adalah monumen peringatan setinggi 132 meter (433 kaki) yang terletak di Lapangan Medan Merdeka, Jakarta Pusat. Monas didirikan untuk mengenang perjuangan rakyat Indonesia merebut kemerdekaan.
+        <h1 class="info-title">MONUMEN SURA DAN BAYA</h1>
+        <p class="info-text text-justify">
+          Monumen Sura dan Baya adalah patung yang menjadi lambang Kota Surabaya. Monumen ini menggambarkan pertarungan antara seekor hiu (Sura) dan seekor buaya (Baya), yang melatarbelakangi cerita rakyat tentang asal-usul nama kota tersebut.
         </p>
-        <p class="info-text">
-          Pembangunan dimulai pada 17 Agustus 1961 di bawah perintah Presiden Soekarno dan diresmikan pada 12 Juli 1975.
+        <p class="info-text text-justify">
+          Monumen ini terletak di depan Kebun Binatang Surabaya. Patung ini memiliki makna filosofis tentang keberanian pemuda-pemuda Surabaya dalam menghadapi bahaya dan tantangan.
         </p>
       </div>
     </div>
@@ -29,10 +38,10 @@
       <div class="photo-strip-outer">
         <div class="photo-scroll" id="photo-row">
           <img src="/images/patungsurabaya.jpg" class="photo-item" alt="">
-          <img src="/images/patungsurabaya.jpg" class="photo-item" alt="">
-          <img src="/images/patungsurabaya.jpg" class="photo-item" alt="">
-          <img src="/images/patungsurabaya.jpg" class="photo-item" alt="">
-          <img src="/images/patungsurabaya.jpg" class="photo-item" alt="">
+          <img src="/images/patungsurabaya2.jpg" class="photo-item" alt="">
+          <img src="/images/patungsurabaya3.jpg" class="photo-item" alt="">
+          <img src="/images/patungsurabaya4.jpg" class="photo-item" alt="">
+          <img src="/images/patungsurabaya5.jpg" class="photo-item" alt="">
         </div>
       </div>
     </div>
@@ -42,9 +51,9 @@
         <h3 class="info-subtitle">Information</h3>
           <div class="info-grid">
             <div>Location</div>
-            <div>: Merdeka Square, Jakarta, Jalan Lapangan Monas, Gambir, Central Jakarta City, Jakarta 10110</div>
+            <div>: Jl. Diponegoro No.1-B, Darmo, Kec. Wonokromo, Kota Surabaya, Jawa Timur 60241</div>
             <div>Opening Hours</div>
-            <div>: 08.00-16.00 WIB (sesi 1) / 19.00-22.00 WIB (sesi 2)</div>
+            <div>: 24 Jam (Area Publik)</div>
             <div>Ticket Price</div>
             <div>: -</div>
           </div>

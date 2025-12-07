@@ -42,8 +42,14 @@ export default async function mountRight3D(containerId='3d-monas', modelUrl='/mn
   renderer.domElement.style.touchAction = "none";
 
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x161616);
-  const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 5000);
+  
+  // --- MULAI GANTI ---
+  // Pastikan path gambarnya benar (misal di folder public)
+  const bgLoader = new THREE.TextureLoader();
+  scene.background = bgLoader.load('/images/BG KOTA.jpg'); 
+  // --- SELESAI GANTI ---
+
+   const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 5000);
   camera.position.set(0, 2, 20);
 
   // lights
@@ -63,7 +69,7 @@ export default async function mountRight3D(containerId='3d-monas', modelUrl='/mn
   // tooltip
   const tooltip = document.createElement('div');
   Object.assign(tooltip.style, {
-    position: 'absolute', padding: '6px 10px', background: 'rgba(0,0,0,0.85)', color: '#fff', borderRadius: '6px',
+    position: 'absolute', padding: '6px 10px', background: 'rgba(3, 39, 241, 0.94)', color: '#fff', borderRadius: '6px',
     pointerEvents: 'none', fontSize: '13px', opacity: '0', transform: 'translate(-50%,-120%)', zIndex: '10'
   });
   container.appendChild(tooltip);

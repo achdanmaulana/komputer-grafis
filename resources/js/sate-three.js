@@ -74,7 +74,7 @@ export default async function mountRight3D(containerId='3d-sate', modelUrl='/mnt
 
   // idle rotate
   let idle = true, lastInt = Date.now();
-  const rotationSpeed = 0.01;
+  const rotationSpeed = 0.001;
   function down(){ idle = false; lastInt = Date.now(); }
   function up(){ lastInt = Date.now(); setTimeout(()=>{ if (Date.now()-lastInt>900) idle = true; },900); }
   container.addEventListener('pointerdown', down);

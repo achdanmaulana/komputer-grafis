@@ -9,7 +9,7 @@
 }
 *{box-sizing:border-box}
 .hero-header{background-image:url('/images/pattern-header.jpg');background-size:cover;background-position:center;position:relative;padding-top:36px;padding-bottom:36px;padding-left: 5%;padding-right: 5%}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8, 81, 252, 0.55),rgba(164, 172, 5, 0.55));z-index:0}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0, 41, 136, 0.55),rgba(16, 1, 102, 0));z-index:0}
 .nav-content{position:relative;z-index:10}
 .header-logo{width:68px;height:68px;object-fit:contain}
 .hero-info{background:#fff;border-radius:22px;padding:34px;box-shadow:0 22px 50px rgba(8,20,48,0.18);max-width:620px}
